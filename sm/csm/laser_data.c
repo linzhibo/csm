@@ -182,7 +182,7 @@ int ld_valid_fields(LDP ld)  {
 		return 0;
 	}
 	
-	int min_nrays = 10;
+	int min_nrays = 8;
 	int max_nrays = 10000;
 	if(ld->nrays < min_nrays || ld->nrays > max_nrays) {
 		sm_error("Invalid number of rays: %d\n", ld->nrays);
